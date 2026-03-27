@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/college_admission-portal/static/css/main.06c0335b.css",
+    "main.js": "/college_admission-portal/static/js/main.1f62380f.js",
+    "index.html": "/college_admission-portal/index.html",
+    "main.06c0335b.css.map": "/college_admission-portal/static/css/main.06c0335b.css.map",
+    "main.1f62380f.js.map": "/college_admission-portal/static/js/main.1f62380f.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.06c0335b.css",
+    "static/js/main.1f62380f.js"
+  ]
+}
