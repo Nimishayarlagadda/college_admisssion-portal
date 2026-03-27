@@ -1,0 +1,98 @@
+{
+  "theme": "Light",
+  "archetype": "4 (Swiss & High-Contrast)",
+  "vibe": "Academic Premium, Official, Trustworthy, Clear",
+  "typography": {
+    "fonts": {
+      "heading": "Cormorant Garamond",
+      "body": "Outfit",
+      "mono": "IBM Plex Mono"
+    },
+    "hierarchy": {
+      "h1": "font-serif text-5xl md:text-6xl tracking-tighter leading-none text-slate-900",
+      "h2": "font-serif text-3xl md:text-4xl tracking-tight text-slate-900",
+      "h3": "font-sans text-xl md:text-2xl font-medium tracking-tight text-slate-900",
+      "h4": "font-sans text-lg font-medium text-slate-800",
+      "body": "font-sans text-base text-slate-600 leading-relaxed",
+      "overline": "font-sans text-xs uppercase tracking-[0.2em] font-bold text-slate-500",
+      "small": "font-sans text-sm text-slate-500"
+    }
+  },
+  "colors": {
+    "background": {
+      "primary": "#FFFFFF",
+      "secondary": "#F8F9FA",
+      "tertiary": "#F3F4F6"
+    },
+    "text": {
+      "primary": "#111827",
+      "secondary": "#4B5563",
+      "muted": "#9CA3AF",
+      "inverse": "#FFFFFF"
+    },
+    "brand": {
+      "primary": "#002FA7",
+      "primaryHover": "#002080",
+      "accent": "#C8102E"
+    },
+    "status": {
+      "success": "#0F5132",
+      "successBg": "#D1E7DD",
+      "warning": "#856404",
+      "warningBg": "#FFF3CD",
+      "error": "#842029",
+      "errorBg": "#F8D7DA",
+      "info": "#055160",
+      "infoBg": "#CFF4FC"
+    },
+    "border": "#E5E7EB"
+  },
+  "spacing_and_layout": {
+    "general": "Generous spacing. Use p-8 or p-12 for containers.",
+    "marketing_pages": "Use bento grid mode A. Wide gap-8 to gap-12. Asymmetry.",
+    "dashboard_pages": "Dense control room grid mode B. gap-6. Strict hierarchy.",
+    "borders": "1px subtle border on most cards (border-gray-200), minimal soft shadow."
+  },
+  "components": {
+    "Navbar.jsx": "Solid white background, sticky top-0, z-50, border-b border-gray-200. Clear logo, 3-5 nav links. Primary CTA button (Apply).",
+    "Sidebar.jsx": "Dashboard navigation. Background #F8F9FA, right border. Links have hover state (bg-gray-100) and active state (bg-blue-50 text-blue-700 font-semibold).",
+    "Card.jsx": "Flat solid surfaces. border border-gray-200, bg-white, rounded-sm or rounded-md. p-6 or p-8. No excessive box-shadows. Clean and crisp.",
+    "Button.jsx": "Primary: bg-[#002FA7] text-white hover:bg-[#002080] rounded-sm transition-colors. Secondary: border border-gray-300 text-gray-700 hover:bg-gray-50. Ghost: text-[#002FA7] hover:bg-blue-50.",
+    "StatusBadge.jsx": "Pill shape, rounded-full, text-xs uppercase tracking-wider font-semibold px-2.5 py-1. Use status colors (e.g., text-green-800 bg-green-100 for 'Admitted', text-amber-800 bg-amber-100 for 'Under Review')."
+  },
+  "pages": {
+    "Home.jsx": "Marketing landing page. High visual impact. Hero section with `hero_university` image (max overlay black/30), large serif heading. Bento grid for features.",
+    "Login.jsx": "Split layout: Left side clean form, right side `login_background` image covering full height. Form should use Shadcn inputs.",
+    "Register.jsx": "Similar to Login.jsx split layout but with registration fields.",
+    "Dashboard.jsx": "Student overview. Metrics: 'Days to decision', 'Documents submitted'. Grid with 'Application Status' and 'Next Steps' list.",
+    "Apply.jsx": "Multi-stage application form. Top stepper progress bar. Clean, single-column layout max-w-2xl. Use Shadcn Form, Input, Select.",
+    "Track.jsx": "Vertical timeline tracking stages: 'Application Submitted', 'Under Review', 'Interview Scheduled', 'Final Decision'. Use icons.",
+    "Documents.jsx": "Upload dashboard. Grid of required documents. Status badges on each. A drag-and-drop zone at top.",
+    "AdminDashboard.jsx": "Dense data view. Wide table mapping Applicants, Target Major, Status, Actions. Use Shadcn Table component. Filters above table."
+  },
+  "libraries": {
+    "icons": "lucide-react",
+    "animation": "framer-motion",
+    "ui": "shadcn/ui"
+  },
+  "media": {
+    "hero_university": "https://static.prod-images.emergentagent.com/jobs/34148af1-0cf9-44be-92b6-9e1854c7a26c/images/0b400afdf48ed4ba92e5dea331087357f0dc70d94342d276cf8f08e7ab5de7c1.png",
+    "login_background": "https://static.prod-images.emergentagent.com/jobs/34148af1-0cf9-44be-92b6-9e1854c7a26c/images/f2a9f5486f55472372e1ca3daf5eedaf36f49f748ed1b2d4ff072526abc543f5.png",
+    "students_studying": "https://images.unsplash.com/photo-1522071820081-009f0129c71c?crop=entropy&cs=srgb&fm=jpg&ixid=M3w3NTY2Nzd8MHwxfHNlYXJjaHwxfHxzdHVkZW50cyUyMHN0dWR5aW5nfGVufDB8fHx8MTc3NDYxMTY3M3ww&ixlib=rb-4.1.0&q=85",
+    "campus_building": "https://images.unsplash.com/photo-1576495199011-eb94736d05d6?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjA3MDB8MHwxfHNlYXJjaHwxfHx1bml2ZXJzaXR5JTIwY2FtcHVzfGVufDB8fHx8MTc3NDYxMTY3Mnww&ixlib=rb-4.1.0&q=85",
+    "purdue_arch": "https://images.pexels.com/photos/247823/pexels-photo-247823.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940"
+  },
+  "testing": {
+    "instructions": "All interactive and key informational elements MUST include a data-testid attribute in kebab-case."
+  },
+  "instructions_to_main_agent": [
+    "Install `lucide-react` and `framer-motion` if not already installed.",
+    "Use standard HTML tags (`div`, `section`) for high-level layouts; only use Shadcn components for complex interactive pieces.",
+    "Never use generic sans fonts for H1/H2 headings. Always apply the 'font-serif' class, configure tailwind to use 'Cormorant Garamond'.",
+    "Body should use 'Outfit' font. Ensure Tailwind config handles these font families.",
+    "Apply solid border styles (e.g. border border-gray-200) rather than heavy box shadows for cards and sections.",
+    "Ensure all text contrast passes APCA standards; text on buttons should explicitly state text color on hover.",
+    "Use the provided image URLs strictly. No placeholders allowed.",
+    "Components to create/modify are .jsx files as requested by the original problem statement."
+  ]
+}
